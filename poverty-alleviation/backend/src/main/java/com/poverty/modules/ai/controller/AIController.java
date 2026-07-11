@@ -15,7 +15,7 @@ import java.util.*;
 @RequestMapping("/api/v1/ai")
 public class AIController {
 
-    @Value("${deepseek.api-key:YOUR_API_KEY}")
+    @Value("${deepseek.api-key}")
     private String apiKey;
 
     private final RestTemplate restTemplate = new RestTemplate();
