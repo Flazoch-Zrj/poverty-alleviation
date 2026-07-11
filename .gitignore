@@ -1,0 +1,38 @@
+# ===== 编译产物 =====
+node_modules/
+dist/
+target/
+*.class
+*.jar
+
+# ===== IDE =====
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ===== 日志 =====
+logs/
+*.log
+
+# ===== 敏感配置 =====
+# 取消下面 # 的注释以保护敏感信息
+# application-dev.yml
+# application-prod.yml
+# *.local.*
+
+# ===== 环境变量 =====
+.env
+.env.local
+
+# ===== 小程序 =====
+miniprogram/node_modules/
+miniprogram/.tea/

@@ -1,0 +1,21 @@
+.page { background:#F0F2F5; min-height:100vh; padding:24rpx; }
+.page-header { margin-bottom:20rpx; }
+
+.filter-row { display:flex; gap:10rpx; margin-bottom:20rpx; }
+.filter-pill { padding:8rpx 24rpx; border-radius:999rpx; font-size:24rpx; background:#fff; color:#64748B; font-weight:500; }
+.filter-pill.active { background:#0A2647; color:#fff; }
+
+.course-card { background:#fff; border-radius:16rpx; padding:24rpx; margin-bottom:14rpx; box-shadow:0 2rpx 8rpx rgba(0,0,0,0.03); }
+.course-header { display:flex; gap:16rpx; }
+.course-cover { width:80rpx; height:80rpx; border-radius:14rpx; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.course-cover-icon { font-size:32rpx; }
+.course-info { flex:1; }
+.course-name { font-size:28rpx; font-weight:600; color:#1E293B; display:block; }
+.course-trainer { font-size:24rpx; color:#64748B; margin-top:4rpx; display:block; }
+.course-meta { display:flex; gap:16rpx; margin-top:14rpx; padding-top:14rpx; border-top:1rpx solid #F8FAFC; font-size:22rpx; color:#94A3B8; flex-wrap:wrap; }
+.course-footer { display:flex; align-items:center; margin-top:14rpx; }
+.course-count { font-size:22rpx; color:#64748B; font-weight:600; flex-shrink:0; }
+
+.empty-box { text-align:center; padding:100rpx 0; }
+.empty-icon { font-size:64rpx; display:block; margin-bottom:16rpx; }
+.empty-text { font-size:28rpx; color:#94A3B8; }

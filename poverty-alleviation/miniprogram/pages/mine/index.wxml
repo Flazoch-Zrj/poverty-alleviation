@@ -1,0 +1,37 @@
+<scroll-view class="page" scroll-y>
+  <!-- 用户头像卡 -->
+  <view class="user-card grad-primary">
+    <view class="user-avatar">{{userInitial}}</view>
+    <text class="user-name">{{userInfo.realName || '用户'}}</text>
+    <text class="user-role">贫困户 · 已认证</text>
+  </view>
+
+  <!-- 功能菜单 -->
+  <view class="menu-card">
+    <view class="menu-item" data-url="/pages/profile/index" bindtap="navTo">
+      <text class="menu-left">📋 我的档案</text>
+      <text class="menu-right">›</text>
+    </view>
+    <view class="menu-item" data-url="/pages/need/index" bindtap="navTo">
+      <text class="menu-left">📢 困难需求</text>
+      <text class="menu-right">›</text>
+    </view>
+    <view class="menu-item" data-url="/pages/job/index" bindtap="navTo">
+      <text class="menu-left">💼 就业申请</text>
+      <text class="menu-right">›</text>
+    </view>
+    <view class="menu-item" data-url="/pages/training/index" bindtap="navTo">
+      <text class="menu-left">🎓 培训报名</text>
+      <text class="menu-right">›</text>
+    </view>
+  </view>
+
+  <view class="menu-card">
+    <view class="menu-item" bindtap="handleLogout">
+      <text class="menu-left" style="color:#EF4444;">🚪 退出登录</text>
+      <text class="menu-right">›</text>
+    </view>
+  </view>
+
+  <view style="height:40rpx;"></view>
+</scroll-view>

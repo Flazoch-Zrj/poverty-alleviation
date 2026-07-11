@@ -1,0 +1,16 @@
+.page { background:#F0F2F5; min-height:100vh; padding:24rpx; }
+.page-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20rpx; }
+
+.filter-row { display:flex; gap:10rpx; margin-bottom:20rpx; }
+.filter-pill { padding:8rpx 24rpx; border-radius:999rpx; font-size:24rpx; background:#fff; color:#64748B; font-weight:500; }
+.filter-pill.active { background:#0A2647; color:#fff; }
+
+.need-card { background:#fff; border-radius:16rpx; padding:24rpx; margin-bottom:16rpx; box-shadow:0 2rpx 8rpx rgba(0,0,0,0.03); }
+.need-header { display:flex; align-items:center; gap:10rpx; }
+.need-title { display:block; }
+.need-desc { display:block; margin-top:8rpx; }
+.need-footer { display:flex; gap:20rpx; margin-top:12rpx; }
+
+.empty-box { text-align:center; padding:80rpx 0; }
+.empty-icon { font-size:64rpx; display:block; margin-bottom:16rpx; }
+.empty-text { font-size:28rpx; color:#94A3B8; }

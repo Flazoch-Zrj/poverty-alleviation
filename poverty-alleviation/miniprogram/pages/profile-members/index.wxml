@@ -1,0 +1,15 @@
+<scroll-view class="page" scroll-y>
+  <view class="card" wx:for="{{members}}" wx:key="memberId">
+    <view class="member-row">
+      <view class="member-info">
+        <text class="member-name">{{item.name}}</text>
+        <text class="member-detail">{{item.relationship}} · {{item.age}}岁 · {{item.gender==='1'?'男':'女'}}</text>
+        <text class="member-detail" wx:if="{{item.idCard}}">身份证: {{item.idCard}}</text>
+        <text class="member-detail" wx:if="{{item.phone}}">电话: {{item.phone}}</text>
+        <text class="member-detail">健康状况: {{item.healthStatus || '未知'}}</text>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{members.length===0}}" class="empty-text">暂无家庭成员</view>
+  <button class="btn-primary" bindtap="goBack">返回档案</button>
+</scroll-view>

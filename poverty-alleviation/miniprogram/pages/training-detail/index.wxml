@@ -1,0 +1,17 @@
+<scroll-view class="page" scroll-y>
+  <view class="card">
+    <text class="t-title">{{course.title}}</text>
+    <view class="t-row"><text>👤 {{course.trainer || '待定'}}</text><text>📅 {{startTimeText}} ~ {{endTimeText}}</text></view>
+    <view class="t-row"><text>📍 {{course.location || '待定'}}</text><text>名额 {{course.enrolledCount||0}}/{{course.maxEnroll||'∞'}}</text></view>
+    <view class="t-section"><text class="t-section-title">课程内容</text><text class="t-desc">{{course.content || '暂无描述'}}</text></view>
+    <button wx:if="{{!isEnrolled}}" class="btn-primary" bindtap="handleEnroll" loading="{{loading}}">立即报名</button>
+    <button wx:else class="btn-disabled" disabled>已报名</button>
+  </view>
+  <view class="card"><view class="card-header">我的报名记录</view>
+    <view wx:for="{{myEnrolls}}" wx:key="enrollId" class="enroll-item">
+      <text>{{item.enrollTimeText}}</text>
+      <text class="status-tag">{{statusText(item.status)}}</text>
+    </view>
+    <view wx:if="{{myEnrolls.length===0}}" class="empty-text">暂无报名</view>
+  </view>
+</scroll-view>

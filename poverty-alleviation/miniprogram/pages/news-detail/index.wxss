@@ -1,0 +1,5 @@
+.page { background:#F8FAFC; min-height:100vh; padding:20rpx; }
+.article { background:#fff; border-radius:16rpx; padding:32rpx; }
+.article-title { font-size:36rpx; font-weight:700; color:#1E293B; display:block; line-height:1.4; }
+.article-meta { font-size:24rpx; color:#94A3B8; margin:16rpx 0 24rpx; }
+.article-content { font-size:28rpx; color:#475569; line-height:1.8; }

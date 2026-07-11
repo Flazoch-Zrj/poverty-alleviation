@@ -1,0 +1,168 @@
+/** ===== 扶贫帮扶系统 - 全局设计系统 ===== */
+
+/* ── 颜色系统 ── */
+.page-bg { background: #F0F2F5; }
+.card-bg { background: #FFFFFF; }
+.primary { color: #0A2647; }
+.secondary { color: #2D7A9B; }
+.accent { color: #F97316; }
+.success { color: #10B981; }
+.danger { color: #EF4444; }
+.warning { color: #F59E0B; }
+.info { color: #6366F1; }
+.text-main { color: #1E293B; }
+.text-secondary { color: #64748B; }
+.text-hint { color: #94A3B8; }
+
+/* ── 渐变 ── */
+.grad-primary { background: linear-gradient(135deg, #0A2647, #2D7A9B); }
+.grad-accent { background: linear-gradient(135deg, #F97316, #FB923C); }
+.grad-success { background: linear-gradient(135deg, #059669, #10B981); }
+
+/* ── 字体 ── */
+.title-1 { font-size: 36rpx; font-weight: 700; color: #1E293B; line-height: 1.3; }
+.title-2 { font-size: 32rpx; font-weight: 600; color: #1E293B; line-height: 1.3; }
+.title-3 { font-size: 28rpx; font-weight: 600; color: #1E293B; }
+.body-text { font-size: 28rpx; color: #475569; line-height: 1.5; }
+.body-small { font-size: 24rpx; color: #64748B; }
+.body-tiny { font-size: 22rpx; color: #94A3B8; }
+.num-large { font-size: 48rpx; font-weight: 800; }
+.num-medium { font-size: 36rpx; font-weight: 800; }
+
+/* ── 布局 ── */
+.page { min-height: 100vh; background: #F0F2F5; }
+.page-padding { padding: 24rpx; }
+.section { margin-bottom: 24rpx; }
+.section-gap { height: 20rpx; }
+
+/* ── 卡片 ── */
+.card {
+  background: #FFFFFF; border-radius: 16rpx; padding: 28rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.04); margin-bottom: 20rpx;
+}
+.card-clickable { transition: transform 0.12s, box-shadow 0.12s; }
+.card-clickable:active { transform: scale(0.97); box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.06); }
+
+/* ── 圆角系统 ── */
+.radius-sm { border-radius: 8rpx; }
+.radius-md { border-radius: 16rpx; }
+.radius-lg { border-radius: 24rpx; }
+.radius-xl { border-radius: 32rpx; }
+.radius-full { border-radius: 999rpx; }
+
+/* ── 按钮 ── */
+.btn-primary {
+  width: 100%; height: 88rpx; line-height: 88rpx; text-align: center;
+  background: linear-gradient(135deg, #0A2647, #2D7A9B); color: #fff;
+  border-radius: 16rpx; font-size: 30rpx; font-weight: 600; border: none;
+  transition: opacity 0.15s; box-shadow: 0 4rpx 16rpx rgba(10,38,71,0.25);
+}
+.btn-primary:active { opacity: 0.85; }
+.btn-accent { background: linear-gradient(135deg, #F97316, #FB923C); box-shadow: 0 4rpx 16rpx rgba(249,115,22,0.3); }
+.btn-outline { background: transparent; border: 2rpx solid #E2E8F0; color: #1E293B; box-shadow: none; }
+.btn-small { height: 64rpx; line-height: 64rpx; font-size: 24rpx; border-radius: 12rpx; padding: 0 24rpx; width: auto; display: inline-block; }
+.btn-danger { background: #FEE2E2; color: #DC2626; box-shadow: none; }
+
+/* ── 标签 ── */
+.tag {
+  display: inline-block; padding: 4rpx 16rpx; border-radius: 999rpx;
+  font-size: 22rpx; font-weight: 600; line-height: 1.6;
+}
+.tag-pending { background: #FEF3C7; color: #D97706; }
+.tag-active { background: #DBEAFE; color: #2563EB; }
+.tag-success { background: #D1FAE5; color: #059669; }
+.tag-danger { background: #FEE2E2; color: #DC2626; }
+.tag-info { background: #EEF2FF; color: #4F46E5; }
+
+/* ── 输入框 ── */
+.input {
+  width: 100%; height: 88rpx; border: 2rpx solid #E2E8F0;
+  border-radius: 14rpx; padding: 0 24rpx; font-size: 28rpx;
+  box-sizing: border-box; background: #F8FAFC;
+  transition: border-color 0.15s;
+}
+.input:focus { border-color: #2D7A9B; }
+
+/* ── 进度条 ── */
+.progress {
+  height: 10rpx; background: #F1F5F9; border-radius: 999rpx; overflow: hidden;
+}
+.progress-fill {
+  height: 100%; border-radius: 999rpx; transition: width 0.5s ease;
+}
+
+/* ── 分隔线 ── */
+.divider { height: 2rpx; background: #F1F5F9; margin: 16rpx 0; }
+
+/* ── 页面过渡动画 ── */
+.fade-in { animation: fadeIn 0.3s ease both; }
+.fade-up { animation: fadeUp 0.35s ease both; }
+.fade-down { animation: fadeDown 0.3s ease both; }
+.slide-left { animation: slideLeft 0.3s ease both; }
+.slide-right { animation: slideRight 0.3s ease both; }
+.scale-in { animation: scaleIn 0.25s ease both; }
+
+/* 列表项入场（逐项延迟） */
+.list-enter { animation: fadeUp 0.35s ease both; }
+.list-enter:nth-child(1) { animation-delay: 0.02s; }
+.list-enter:nth-child(2) { animation-delay: 0.06s; }
+.list-enter:nth-child(3) { animation-delay: 0.10s; }
+.list-enter:nth-child(4) { animation-delay: 0.14s; }
+.list-enter:nth-child(5) { animation-delay: 0.18s; }
+.list-enter:nth-child(6) { animation-delay: 0.22s; }
+.list-enter:nth-child(7) { animation-delay: 0.26s; }
+.list-enter:nth-child(8) { animation-delay: 0.30s; }
+.list-enter:nth-child(9) { animation-delay: 0.34s; }
+.list-enter:nth-child(10) { animation-delay: 0.38s; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20rpx); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-20rpx); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideLeft { from { transform: translateX(100%); } to { transform: translateX(0); } }
+@keyframes slideRight { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+@keyframes scaleIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* ── 脉冲动画（用于加载/刷新状态） ── */
+.pulse { animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+/* ── 骨架屏闪烁 ── */
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+  background-size: 200% 100%; border-radius: 8rpx;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ── 旋转加载 ── */
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* ── 弹跳 ── */
+.bounce-in { animation: bounceIn 0.5s cubic-bezier(.68,-.55,.27,1.55) both; }
+@keyframes bounceIn { 0% { transform: scale(0); opacity: 0; } 60% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+
+/* ── 按压反馈 ── */
+.press-feedback:active { transform: scale(0.97); opacity: 0.9; transition: transform 0.08s, opacity 0.08s; }
+
+/* ── Tab Bar 自定义 ── */
+.tab-bar-custom { height: 100rpx; background: #fff; border-top: 1rpx solid #F1F5F9; display: flex; }
+.tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 20rpx; color: #94A3B8; }
+.tab-item.active { color: #0A2647; font-weight: 600; }
+.tab-icon { font-size: 44rpx; margin-bottom: 4rpx; }
+
+/* ── 状态胶囊 ── */
+.capsule {
+  display: inline-flex; align-items: center; gap: 6rpx;
+  padding: 4rpx 16rpx 4rpx 12rpx; border-radius: 999rpx; font-size: 22rpx; font-weight: 600;
+}
+.capsule::before { content: ''; width: 12rpx; height: 12rpx; border-radius: 50%; }
+.capsule-pending { background: #FEF3C7; color: #D97706; }
+.capsule-pending::before { background: #D97706; }
+.capsule-active { background: #DBEAFE; color: #2563EB; }
+.capsule-active::before { background: #2563EB; }
+.capsule-done { background: #D1FAE5; color: #059669; }
+.capsule-done::before { background: #059669; }

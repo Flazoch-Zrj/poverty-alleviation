@@ -1,0 +1,4 @@
+.stat-card { text-align:center; padding:24rpx 16rpx; border-radius:16rpx; }
+.stat-icon { font-size:36rpx; display:block; margin-bottom:8rpx; }
+.stat-value { font-size:40rpx; font-weight:800; color:#1E293B; display:block; }
+.stat-label { font-size:22rpx; color:#64748B; margin-top:4rpx; display:block; }

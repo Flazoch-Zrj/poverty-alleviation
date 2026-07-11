@@ -1,0 +1,13 @@
+.page { background:#F8FAFC; min-height:100vh; padding:20rpx; }
+.card { background:#fff; border-radius:16rpx; padding:24rpx; margin-bottom:20rpx; }
+.j-title { font-size:34rpx; font-weight:700; color:#1E293B; display:block; margin-bottom:16rpx; }
+.j-row { display:flex; justify-content:space-between; font-size:26rpx; color:#64748B; margin-bottom:8rpx; }
+.j-section { margin-top:20rpx; }
+.j-section-title { font-size:26rpx; font-weight:600; color:#1E293B; display:block; margin-bottom:8rpx; }
+.j-desc { font-size:24rpx; color:#64748B; line-height:1.6; }
+.btn-primary { width:100%; height:88rpx; background:linear-gradient(135deg,#0A2647,#2D7A9B); color:#fff; border-radius:12rpx; font-size:30rpx; font-weight:600; line-height:88rpx; margin-top:20rpx; }
+.card-header { font-size:28rpx; font-weight:600; color:#1E293B; margin-bottom:12rpx; }
+.app-item { display:flex; justify-content:space-between; padding:12rpx 0; border-bottom:1rpx solid #F1F5F9; font-size:24rpx; color:#64748B; }
+.status-tag { padding:2rpx 12rpx; border-radius:6rpx; font-size:22rpx; }
+.s1 { background:#FEF3C7; color:#D97706; } .s2 { background:#D1FAE5; color:#059669; } .s3 { background:#FEE2E2; color:#DC2626; }
+.empty-text { text-align:center; color:#94A3B8; padding:20rpx; font-size:24rpx; }

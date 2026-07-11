@@ -1,0 +1,9 @@
+.login-page { height:100vh; background:linear-gradient(135deg,#0A2647,#2D7A9B); display:flex; align-items:center; justify-content:center; }
+.login-box { width:85%; background:#fff; border-radius:16px; padding:40rpx 30rpx; text-align:center; }
+.logo-icon { font-size:60rpx; display:block; margin-bottom:10rpx; }
+.logo-title { font-size:36rpx; font-weight:700; color:#0A2647; display:block; }
+.logo-sub { font-size:24rpx; color:#94A3B8; margin-top:6rpx; display:block; }
+.form-area { margin-top:40rpx; }
+.input { width:100%; height:88rpx; border:2rpx solid #E2E8F0; border-radius:12rpx; padding:0 24rpx; font-size:28rpx; margin-bottom:20rpx; box-sizing:border-box; }
+.btn-primary { width:100%; height:88rpx; background:linear-gradient(135deg,#0A2647,#2D7A9B); color:#fff; border-radius:12rpx; font-size:30rpx; font-weight:600; line-height:88rpx; border:none; margin-top:10rpx; }
+.footer-text { margin-top:30rpx; font-size:22rpx; color:#94A3B8; }

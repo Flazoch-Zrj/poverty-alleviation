@@ -1,0 +1,9 @@
+<view class="page-header">
+  <view class="header-left">
+    <text class="header-title">{{title}}</text>
+    <text class="header-desc" wx:if="{{desc}}">{{desc}}</text>
+  </view>
+  <view class="header-right">
+    <slot name="action" />
+  </view>
+</view>

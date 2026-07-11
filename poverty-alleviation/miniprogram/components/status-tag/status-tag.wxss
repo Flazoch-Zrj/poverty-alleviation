@@ -1,0 +1,6 @@
+.tag { display:inline-block; padding:4rpx 16rpx; border-radius:999rpx; font-size:22rpx; font-weight:600; }
+.tag-pending { background:#FEF3C7; color:#D97706; }
+.tag-active { background:#DBEAFE; color:#2563EB; }
+.tag-success { background:#D1FAE5; color:#059669; }
+.tag-danger { background:#FEE2E2; color:#DC2626; }
+.tag-info { background:#EEF2FF; color:#4F46E5; }

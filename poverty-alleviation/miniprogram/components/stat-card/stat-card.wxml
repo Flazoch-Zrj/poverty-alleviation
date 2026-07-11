@@ -1,0 +1,5 @@
+<view class="stat-card" style="background:{{bg||'#fff'}}">
+  <text class="stat-icon">{{icon}}</text>
+  <text class="stat-value">{{value}}</text>
+  <text class="stat-label">{{label}}</text>
+</view>

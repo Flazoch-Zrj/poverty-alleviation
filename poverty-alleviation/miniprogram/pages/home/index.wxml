@@ -1,0 +1,84 @@
+<scroll-view class="page" scroll-y>
+  <!-- 骨架加载 -->
+  <view wx:if="{{skeleton}}" class="fade-in">
+    <view class="hero-banner grad-primary" style="padding:48rpx 32rpx;">
+      <view class="skeleton-shimmer" style="width:80rpx;height:80rpx;border-radius:50%;margin-bottom:16rpx;"></view>
+      <view class="skeleton-shimmer" style="width:200rpx;height:32rpx;border-radius:8rpx;"></view>
+      <view class="skeleton-shimmer" style="width:300rpx;height:28rpx;border-radius:8rpx;margin-top:16rpx;"></view>
+    </view>
+    <view class="grid-4" style="padding:24rpx 20rpx;">
+      <view wx:for="{{4}}" wx:key="index"><view class="skeleton-shimmer" style="height:100rpx;border-radius:16rpx;"></view></view>
+    </view>
+  </view>
+
+  <!-- 真实内容 -->
+  <view wx:else class="fade-up">
+    <!-- 顶部渐变横幅 -->
+    <view class="hero-banner grad-primary">
+      <view class="hero-top">
+        <view class="hero-avatar">{{userInitial}}</view>
+        <view class="hero-info">
+          <text class="hero-greeting">🌤️ 上午好</text>
+          <text class="hero-name">{{userInfo.realName || '用户'}}</text>
+        </view>
+      </view>
+      <view class="hero-meta">
+        <text class="hero-tag">已结对</text>
+        <text>帮扶责任人: {{pairInfo ? pairInfo.cadreName : '加载中...'}}</text>
+      </view>
+    </view>
+
+    <!-- 快捷四宫格 -->
+    <view class="grid-4 scale-in">
+      <view class="grid-item press-feedback" data-url="/pages/profile/index" bindtap="navTo">
+        <view class="grid-icon grad-primary">📋</view>
+        <text class="grid-label">我的档案</text>
+      </view>
+      <view class="grid-item press-feedback" data-url="/pages/need/index" bindtap="navTo">
+        <view class="grid-icon grad-accent">📢</view>
+        <text class="grid-label">困难需求</text>
+      </view>
+      <view class="grid-item press-feedback" data-url="/pages/job/index" bindtap="navTo">
+        <view class="grid-icon grad-success">💼</view>
+        <text class="grid-label">就业岗位</text>
+      </view>
+      <view class="grid-item press-feedback" data-url="/pages/training/index" bindtap="navTo">
+        <view class="grid-icon" style="background:linear-gradient(135deg,#6366F1,#818CF8);">🎓</view>
+        <text class="grid-label">技能培训</text>
+      </view>
+    </view>
+
+    <!-- 待办事项 -->
+    <view class="card fade-up" wx:if="{{tasks.length>0}}">
+      <view class="card-header-row">
+        <text class="title-3">📌 待办事项</text>
+        <text class="body-tiny">{{tasks.length}} 项</text>
+      </view>
+      <view wx:for="{{tasks}}" wx:key="index" class="todo-item list-enter">
+        <view class="todo-dot {{item.urgency || 'medium'}}"></view>
+        <view class="todo-body">
+          <text class="todo-text">{{item.title}}</text>
+          <text class="todo-type">{{item.familyName || ''}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 最新政策 -->
+    <view class="card fade-up">
+      <view class="card-header-row">
+        <text class="title-3">📰 最新政策</text>
+        <text class="body-tiny">更多 ›</text>
+      </view>
+      <view wx:for="{{newsList}}" wx:key="articleId" class="news-item list-enter press-feedback" data-url="/pages/news-detail/index?id={{item.articleId}}" bindtap="navTo">
+        <view class="news-left">
+          <text class="news-title">{{item.title}}</text>
+          <text class="news-date">{{item.createDate}}</text>
+        </view>
+        <view class="news-arrow">→</view>
+      </view>
+      <view wx:if="{{newsList.length===0}}" class="empty-hint">暂无政策信息</view>
+    </view>
+
+    <view style="height:40rpx;"></view>
+  </view>
+</scroll-view>

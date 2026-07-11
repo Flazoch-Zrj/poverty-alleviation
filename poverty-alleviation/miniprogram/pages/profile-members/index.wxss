@@ -1,0 +1,8 @@
+.page { background:#F8FAFC; min-height:100vh; padding:20rpx; }
+.card { background:#fff; border-radius:16rpx; padding:24rpx; margin-bottom:16rpx; }
+.member-row { display:flex; gap:16rpx; }
+.member-info { flex:1; }
+.member-name { font-size:30rpx; font-weight:600; color:#1E293B; display:block; }
+.member-detail { font-size:24rpx; color:#64748B; display:block; margin-top:6rpx; }
+.btn-primary { width:100%; height:80rpx; background:#0A2647; color:#fff; border-radius:12rpx; font-size:28rpx; line-height:80rpx; margin-top:20rpx; }
+.empty-text { text-align:center; color:#94A3B8; font-size:24rpx; padding:40rpx; }

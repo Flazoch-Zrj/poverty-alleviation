@@ -1,0 +1,21 @@
+.family-hero { margin:-1rpx -1rpx 0; padding:40rpx 28rpx; color:#fff; border-radius:0 0 32rpx 32rpx; }
+.family-name { font-size:40rpx; font-weight:800; display:block; }
+.family-meta { display:flex; gap:12rpx; margin-top:12rpx; }
+.family-tag { padding:6rpx 16rpx; background:rgba(255,255,255,0.15); border-radius:999rpx; font-size:22rpx; }
+
+.card { background:#fff; border-radius:16rpx; padding:24rpx; margin:20rpx; box-shadow:0 2rpx 8rpx rgba(0,0,0,0.03); }
+.card-header-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:16rpx; }
+.edit-btn { font-size:24rpx; color:#2D7A9B; padding:4rpx 8rpx; }
+.info-grid { display:grid; grid-template-columns:1fr 1fr; gap:16rpx; }
+.info-item { background:#F8FAFC; border-radius:12rpx; padding:16rpx; }
+.info-item:last-child { grid-column:span 2; }
+.info-label { font-size:22rpx; color:#94A3B8; display:block; margin-bottom:4rpx; }
+.info-value { font-size:28rpx; font-weight:600; color:#1E293B; display:block; }
+.info-value.accent { color:#F97316; }
+
+.member-row { display:flex; align-items:center; gap:14rpx; padding:14rpx 0; border-bottom:1rpx solid #F8FAFC; }
+.member-row:last-child { border-bottom:none; }
+.member-avatar { width:56rpx; height:56rpx; border-radius:50%; background:linear-gradient(135deg,#2D7A9B,#60A5FA); display:flex; align-items:center; justify-content:center; color:#fff; font-size:24rpx; font-weight:700; flex-shrink:0; }
+.member-body { flex:1; }
+.member-name { font-size:28rpx; font-weight:600; color:#1E293B; display:block; }
+.member-detail { font-size:24rpx; color:#64748B; display:block; margin-top:2rpx; }

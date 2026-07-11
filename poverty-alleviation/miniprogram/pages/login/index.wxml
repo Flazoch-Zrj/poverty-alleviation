@@ -1,0 +1,17 @@
+<view class="login-page">
+  <view class="login-box">
+    <view class="logo-area">
+      <text class="logo-icon">🤝</text>
+      <text class="logo-title">扶贫帮扶系统</text>
+      <text class="logo-sub">贫困户端</text>
+    </view>
+
+    <view class="form-area">
+      <input class="input" placeholder="请输入账号" model:value="{{username}}" />
+      <input class="input" placeholder="请输入密码" password model:value="{{password}}" />
+      <button class="btn-primary" bindtap="handleLogin" loading="{{loading}}">登 录</button>
+    </view>
+
+    <view class="footer-text">首次使用请联系帮扶干部获取账号</view>
+  </view>
+</view>

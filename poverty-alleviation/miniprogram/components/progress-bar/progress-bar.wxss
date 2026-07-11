@@ -1,0 +1,3 @@
+.progress-outer { display:inline-block; height:10rpx; background:#F1F5F9; border-radius:999rpx; overflow:hidden; flex:1; }
+.progress-fill { height:100%; border-radius:999rpx; transition:width .4s ease; }
+.progress-text { font-size:22rpx; color:#64748B; margin-left:10rpx; }

@@ -1,0 +1,9 @@
+.mask { position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.4); z-index:1000; opacity:0; pointer-events:none; transition:opacity .2s; }
+.mask.show { opacity:1; pointer-events:auto; }
+.sheet { position:fixed; left:0; bottom:0; width:100%; background:#fff; border-radius:24rpx 24rpx 0 0; transform:translateY(100%); transition:transform .3s cubic-bezier(.16,1,.3,1); }
+.sheet.show { transform:translateY(0); }
+.sheet-title { text-align:center; padding:28rpx; font-size:28rpx; color:#64748B; border-bottom:1rpx solid #F1F5F9; }
+.sheet-item { text-align:center; padding:30rpx; font-size:30rpx; color:#1E293B; border-bottom:1rpx solid #F1F5F9; }
+.sheet-item:active { background:#F8FAFC; }
+.sheet-cancel { text-align:center; padding:30rpx; font-size:30rpx; color:#94A3B8; margin-top:8rpx; }
+.sheet-cancel:active { background:#F8FAFC; }

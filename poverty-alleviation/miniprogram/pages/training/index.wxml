@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="page-header">
+    <text class="title-1">🎓 技能培训</text>
+  </view>
+
+  <view class="filter-row">
+    <view wx:for="{{['全部','报名中','进行中','已结束']}}" wx:key="index"
+      class="filter-pill {{activeFilter===index?'active':''}}"
+      bindtap="switchTab" data-index="{{index}}">{{item}}</view>
+  </view>
+
+  <view wx:for="{{list}}" wx:key="courseId" class="course-card card-clickable" data-id="{{item.courseId}}" bindtap="goDetail">
+    <view class="course-header">
+      <view class="course-cover grad-primary">
+        <text class="course-cover-icon">🎓</text>
+      </view>
+      <view class="course-info">
+        <text class="course-name">{{item.title}}</text>
+        <text class="course-trainer">👤 {{item.trainer || '待定'}}</text>
+      </view>
+    </view>
+    <view class="course-meta">
+      <text>📅 {{item.startDate || '-'}} ~ {{item.endDate || "-"}}</text>
+      <text>📍 {{item.location || '待定'}}</text>
+    </view>
+    <view class="course-footer">
+      <view class="progress" style="flex:1;margin-right:12rpx;">
+        <view class="progress-fill grad-primary" style="width:{{item.loadPct}}%"></view>
+      </view>
+      <text class="course-count">{{item.enrolledCount||0}}/{{item.maxEnroll||'∞'}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{list.length===0}}" class="empty-box">
+    <text class="empty-icon">🎓</text>
+    <text class="empty-text">暂无课程</text>
+  </view>
+
+  <view style="height:40rpx;"></view>
+</view>

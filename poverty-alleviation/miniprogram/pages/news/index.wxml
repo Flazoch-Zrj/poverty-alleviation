@@ -1,0 +1,10 @@
+<view class="page">
+  <view class="filters">
+    <view wx:for="{{['全部','政策新闻','脱贫案例','通知公告']}}" wx:key="index" class="filter-tag {{activeFilter===index?'active':''}}" bindtap="switchTab" data-index="{{index}}">{{item}}</view>
+  </view>
+  <view wx:for="{{list}}" wx:key="articleId" class="news-card" data-url="/pages/news-detail/index?id={{item.articleId}}" bindtap="goDetail">
+    <text class="news-title">{{item.title}}</text>
+    <view class="news-bottom"><text class="news-type">{{item.type || '资讯'}}</text><text class="news-date">{{item.createDate || ""}}</text></view>
+  </view>
+  <view wx:if="{{list.length===0}}" class="empty-text">暂无信息</view>
+</view>

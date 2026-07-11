@@ -1,0 +1,7 @@
+<scroll-view class="page" scroll-y>
+  <view class="article">
+    <text class="article-title">{{article.title}}</text>
+    <view class="article-meta">{{article.type || '资讯'}} · {{article.createDate || ""}}</view>
+    <view class="article-content"><text>{{article.content}}</text></view>
+  </view>
+</scroll-view>

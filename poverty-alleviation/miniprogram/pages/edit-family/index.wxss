@@ -1,0 +1,5 @@
+.page { padding:20rpx; background:#F8FAFC; min-height:100vh; }
+.form-group { margin-bottom:24rpx; }
+.form-label { font-size:26rpx; font-weight:600; color:#1E293B; display:block; margin-bottom:8rpx; }
+.form-input { width:100%; height:80rpx; border:2rpx solid #E2E8F0; border-radius:12rpx; padding:0 20rpx; font-size:26rpx; box-sizing:border-box; }
+.btn-primary { width:100%; height:88rpx; background:linear-gradient(135deg,#0A2647,#2D7A9B); color:#fff; border-radius:12rpx; font-size:30rpx; font-weight:600; line-height:88rpx; margin-top:30rpx; }

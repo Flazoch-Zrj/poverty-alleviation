@@ -1,0 +1,5 @@
+<view class="skeleton">
+  <view wx:for="{{rows}}" wx:key="index">
+    <view class="skeleton-row" style="height:{{item.h||'32rpx'}};width:{{item.w||'100%'}};margin-top:{{item.mt||'20rpx'}}"></view>
+  </view>
+</view>

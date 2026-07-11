@@ -1,0 +1,15 @@
+<scroll-view class="page" scroll-y>
+  <view class="card"><text class="j-title">{{job.title}}</text>
+    <view class="j-row"><text>🏢 {{job.company}}</text><text>{{job.salaryRange}}</text></view>
+    <view class="j-row"><text>📍 {{job.workplace}}</text><text>📞 {{job.contact}}</text></view>
+    <view class="j-section"><text class="j-section-title">岗位要求</text><text class="j-desc">{{job.requirements || '暂无要求'}}</text></view>
+    <button class="btn-primary" bindtap="handleApply" loading="{{loading}}">立即申请</button>
+  </view>
+  <view class="card"><view class="card-header">我的申请记录</view>
+    <view wx:for="{{myApps}}" wx:key="applyId" class="app-item">
+      <text>{{item.applyDate || ""}}</text>
+      <text class="status-tag s{{item.applyStatus}}">{{['','申请中','已通过','已拒绝'][item.applyStatus]}}</text>
+    </view>
+    <view wx:if="{{myApps.length===0}}" class="empty-text">暂无申请记录</view>
+  </view>
+</scroll-view>

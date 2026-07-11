@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/home/index",
+    "pages/profile/index",
+    "pages/profile-members/index",
+    "pages/edit-family/index",
+    "pages/need/index",
+    "pages/need-add/index",
+    "pages/job/index",
+    "pages/job-detail/index",
+    "pages/training/index",
+    "pages/training-detail/index",
+    "pages/news/index",
+    "pages/news-detail/index",
+    "pages/mine/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0A2647",
+    "navigationBarTitleText": "扶贫帮扶系统",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F8FAFC",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#94A3B8",
+    "selectedColor": "#0A2647",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      { "pagePath": "pages/home/index", "iconPath": "images/home.png", "selectedIconPath": "images/home-active.png", "text": "首页" },
+      { "pagePath": "pages/need/index", "iconPath": "images/need.png", "selectedIconPath": "images/need-active.png", "text": "需求" },
+      { "pagePath": "pages/job/index", "iconPath": "images/job.png", "selectedIconPath": "images/job-active.png", "text": "就业" },
+      { "pagePath": "pages/training/index", "iconPath": "images/training.png", "selectedIconPath": "images/training-active.png", "text": "培训" },
+      { "pagePath": "pages/mine/index", "iconPath": "images/mine.png", "selectedIconPath": "images/mine-active.png", "text": "我的" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

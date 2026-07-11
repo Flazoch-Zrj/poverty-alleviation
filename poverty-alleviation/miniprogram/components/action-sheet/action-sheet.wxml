@@ -1,0 +1,9 @@
+<view class="mask {{visible?'show':''}}" bindtap="onClose">
+  <view class="sheet {{visible?'show':''}}" catchtap="">
+    <view class="sheet-title" wx:if="{{title}}">{{title}}</view>
+    <view wx:for="{{items}}" wx:key="index" class="sheet-item" data-index="{{index}}" bindtap="onItemTap">
+      <text>{{item}}</text>
+    </view>
+    <view class="sheet-cancel" bindtap="onClose">取消</view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<view class="progress-outer">
+  <view class="progress-fill" style="width:{{pct}}%;background:{{color||'linear-gradient(90deg,#2D7A9B,#60A5FA)'}}"></view>
+</view>
+<text class="progress-text" wx:if="{{showText}}">{{pct}}%</text>

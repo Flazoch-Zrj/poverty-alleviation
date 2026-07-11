@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="form-group">
+    <text class="form-label">需求类型</text>
+    <picker mode="selector" range="{{types}}" value="{{form.typeIndex}}" bindchange="onTypeChange">
+      <view class="picker">{{types[form.typeIndex]}}</view>
+    </picker>
+  </view>
+  <view class="form-group"><text class="form-label">标题</text><input class="form-input" placeholder="请输入需求标题" model:value="{{form.title}}"/></view>
+  <view class="form-group"><text class="form-label">描述</text><textarea class="form-textarea" placeholder="请详细描述需求内容" model:value="{{form.description}}"/></view>
+  <view class="form-group"><text class="form-label">目标金额(元)</text><input class="form-input" placeholder="选填" model:value="{{form.amount}}" type="digit"/></view>
+  <button class="btn-primary" bindtap="handleSubmit" loading="{{loading}}">提交需求</button>
+</view>
